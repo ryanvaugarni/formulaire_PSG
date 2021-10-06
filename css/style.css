@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600');
+/* reset */
+html{
+    font-size: 62.5%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Dosis', sans-serif;
+    margin: 0;
+}
+h1,h2,h3,p,ul,ol{
+    margin: 0;
+    font-weight: 300;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* logo */
+img{
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    margin: 0 auto 0;
+    }
+/* theme */
+input{
+    outline: none;
+
+}
+:root{
+    --color-form: #ccc;
+    --color-button: #448aff;
+    --color-warning: #c80000;
+}
+header{
+    margin: 2rem 0;
+}
+header h1{
+    text-align: center;
+    line-height: 6rem;
+    font-size: 4rem;
+}
+header h1 > strong{
+    text-transform: uppercase;
+}
+main{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+main section, main .form{
+    padding: 1rem;
+    border: solid .1rem #122657;
+    background-color: #fafafa;
+}
+section a::before{
+    content: '\f023';
+    font-family: 'FontAwesome';
+    vertical-align: - 0.1rem;
+    margin-right: .5rem;
+}
+section{
+    margin-bottom: .2rem;
+}
+section h2{
+    text-align: center;
+}
+[placeholder]{
+    transition: all 0.5s ease-in-out;
+}
+[placeholder]:focus{
+    box-shadow: 0 0 1rem rgb(241, 74, 74);
+}
+.form input, .form label{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+.form input{
+    border: solid .1rem #ccc;
+    line-height: 3.5rem;
+    padding: .5rem;
+}
+.form input[placeholder]{
+    font-size: 1.6rem;
+}
+/* submit */
+section a, form input[type="submit"]{
+    display: block;
+    line-height: 4rem;
+    text-align: center;
+    border: solid .1rem transparent;
+    margin: .8rem auto 0;
+    width: 30rem;
+    background-color: #122657;
+    color: #fff;
+    border-radius: .3rem;
+    font-size: 1.6rem;
+}
+.form{
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+.appear{
+    z-index: 1;
+    opacity: 1;
+}
+.warning, .success{
+    background-color: rgb(200, 0, 0);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.0rem;
+    display: none;
+    line-height: 2.5rem;
+    padding: 1rem;
+}
+.success{
+    background-color: rgb(0,200,0);
+}
+strong{
+    font-size: 50px;
+    color: #5a0e0e;
+}
+/* pied de page */
+footer{
+    text-align: center;
+    background: linear-gradient(grey, white);
+    padding: 1rem;
+  
+}
+.fleche{
+    font-size: 5em;
+}
